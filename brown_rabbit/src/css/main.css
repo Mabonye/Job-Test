@@ -1,18 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    width: 80%;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
-    background: linear-gradient(180deg, #f7214f 0, #c00d34 100%);
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
 }
-.wrapper{
+
+header {
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    padding: 20px 60px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 70%;
+}
+
+.nav div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+header li {
+    display: block;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.second-container {
+    width: 85%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.posts {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1.5;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.item img {
+    width: auto;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information {
+    flex: 1;
+    line-height: 2;
+}
+
+.information ul {
+    list-style: none;
+}
+
+.information hr {
+    width: 75%
+}
+
+address {
+    font-style: normal;
+    font-weight: lighter;
+}
+
+
+/* General styles */
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+time {
+    font-size: 15px;
+    color: #707070;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #DDDDDD;
+    opacity: 0.9;
+    margin: 10px 0;
+}
+
+
+.second-item {
+    flex: 1;
+}
+
+
+/* Sponsors logos */
+#logo img {
+    width: 100%;
+    height: 100vh;
+}
+
+.third-container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.third-container h2 {
     text-align: center;
 }
 
-a{
-    color: white;
-    margin-top: 15px;
-    display: inline-block;
+#lineBreak {
+    width: 82%;
+    margin: 50px auto;
 }
