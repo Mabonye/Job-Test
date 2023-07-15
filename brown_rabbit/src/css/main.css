@@ -64,7 +64,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+
 }
 
 .item {
@@ -194,6 +194,7 @@ hr {
 #footerWrapper hr {
     color: #DDDDDD;
 }
+
 .footerLinks {
     display: flex;
     gap: 30px;
@@ -201,11 +202,11 @@ hr {
 
 .footerLinks img {
     width: 20px;
-    color:#707070; 
+    color: #707070;
 }
 
 .footer-container2 {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     margin-top: 60px;
 }
@@ -223,12 +224,55 @@ hr {
 .footer-container2 img {
     width: 80%;
     height: 80%;
-} 
+}
 
 .footer-container2 address {
     color: #707070;
 }
 
-.footer-container2 h3, h4 {
+.footer-container2 h3,
+h4 {
     margin-bottom: 10px;
+}
+
+
+
+
+
+.popup {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    background-color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.popUpDescription {
+    padding: 30px 0;
+    width: 90%;
+    margin: auto;  
+}
+
+.popUpDescription p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.popup img {
+    width: 100%;
+    height: 400px;
+}
+
+.openPopUp {
+    visibility: visible;
+}
+
+.closePopUp {
+    visibility: hidden;
 }
