@@ -67,6 +67,7 @@ function loadSponsorImages() {
 
 function openPage(button) {
     const popup = button.parentNode.parentNode.nextElementSibling;
+    popup.classList.remove('closePopUp');
     popup.classList.add('openPopUp');
 }
 
